@@ -1,0 +1,12 @@
+managed; // implementation in class zbp_i_programminglanguages_hsk unique;
+
+define behavior for ZI_ProgrammingLanguages_HSKA03 //alias <alias_name>
+persistent table ZPLANGINFO_03
+//lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}
