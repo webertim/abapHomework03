@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service def for Programming Languages'
+define service ZUI_C_PROGRAMMINGLANGUAGES_03 {
+  expose ZC_PROGRAMMINGLANGUAGES_HSKA03;
+}
