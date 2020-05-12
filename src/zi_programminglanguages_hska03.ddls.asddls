@@ -5,8 +5,8 @@
 @EndUserText.label: 'Information about programming languages'
 define root view ZI_ProgrammingLanguages_HSKA03
   as select from zplanginfo_03 as ProgrammingLanguageInfo
-  association to ZI_PLANGUAGES_03 as _ProgrammingLanguages on ProgrammingLanguageInfo.langid = _ProgrammingLanguages.langid
-  association to ZI_USERAVG_03    as _UserAvarage          on ProgrammingLanguageInfo.langid = _UserAvarage.langid
+  association [1..1] to ZI_PLANGUAGES_03 as _ProgrammingLanguages on ProgrammingLanguageInfo.langid = _ProgrammingLanguages.langid
+  association [1..1] to ZI_USERAVG_03    as _UserAvarage          on ProgrammingLanguageInfo.langid = _UserAvarage.langid
 {
   key ProgrammingLanguageInfo.langid,
       documentationhref,

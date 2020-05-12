@@ -55,7 +55,7 @@ define root view entity ZC_PROGRAMMINGLANGUAGES_HSKA03
                      lineItem:       [ { position: 20, importance: #HIGH } ],
                      identification: [ { position: 20 , label: 'Name'} ],
                      selectionField: [ { position: 20 } ] }
-      @Consumption.valueHelpDefinition: [{ entity : {name: 'ZPLANGUAGES_03', element: 'name'  } }]
+      @Consumption.valueHelpDefinition: [{ entity : {name: 'ZI_PLANGUAGES_03', element: 'name'  } }]
      
       @Search.defaultSearchElement: true
       name      as Name,
@@ -63,35 +63,35 @@ define root view entity ZC_PROGRAMMINGLANGUAGES_HSKA03
       @UI: {
                lineItem:       [ { position: 80, importance: #HIGH } ],
                identification: [ { position: 80 , label: 'PerformanceAverage' } ] }
-      @Consumption.valueHelpDefinition: [{ entity : {name: 'ZUSERAVG_03', element: 'performanceavg'  } }]
+      @Consumption.valueHelpDefinition: [{ entity : {name: 'ZI_USERAVG_03', element: 'performanceavg'  } }]
        
       performanceavg     as PerformanceAvarage,
 
       @UI: {
                lineItem:       [ { position: 90, importance: #HIGH } ],
                identification: [ { position: 90 , label: 'NativeLibrariesAverage' } ] }
-      @Consumption.valueHelpDefinition: [{ entity : {name: 'ZUSERAVG_03', element: 'nativelibrariesavg'  } }]
+      @Consumption.valueHelpDefinition: [{ entity : {name: 'ZI_USERAVG_03', element: 'nativelibrariesavg'  } }]
 
       nativelibrariesavg as NativeLibrariesAvarage,
 
       @UI: {
                lineItem:       [ { position: 100, importance: #HIGH } ],
                identification: [ { position: 100 , label: 'FrameworkAverage' } ] }
-      @Consumption.valueHelpDefinition: [{ entity : {name: 'ZUSERAVG_03', element: 'frameworkavg'  } }]
+      @Consumption.valueHelpDefinition: [{ entity : {name: 'ZI_USERAVG_03', element: 'frameworkavg'  } }]
 
       frameworkavg       as FrameworkAvarage,
 
       @UI: {
                lineItem:       [ { position: 110, importance: #HIGH } ],
                identification: [ { position: 110 , label: 'WorkflowAverage' } ] }
-      @Consumption.valueHelpDefinition: [{ entity : {name: 'ZUSERAVG_03', element: 'workflowavg'  } }]
+      @Consumption.valueHelpDefinition: [{ entity : {name: 'ZI_USERAVG_03', element: 'workflowavg'  } }]
 
       workflowavg        as WorkflowAvarage,
 
       @UI: {
                lineItem:       [ { position: 120, importance: #HIGH } ],
                identification: [ { position: 120 , label: 'CommunityAverage' } ] }
-      @Consumption.valueHelpDefinition: [{ entity : {name: 'ZUSERAVG_03', element: 'communityavg'  } }]
+      @Consumption.valueHelpDefinition: [{ entity : {name: 'ZI_USERAVG_03', element: 'communityavg'  } }]
 
       communityavg       as CommunityAvarage
 

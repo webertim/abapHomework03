@@ -6,7 +6,25 @@ lock master
 //authorization master ( instance )
 //etag master <field_name>
 {
+
+  field ( readonly ) nativelibrariesavg, communityavg, frameworkavg, performanceavg, workflowavg, langid;
+  field ( mandatory ) name;
+
   create;
   update;
   delete;
+
+  action ( features : instance ) updatePopulatrity result [1] $self;
+
+  validation validateDate on save { field age; }
+
+  validation validateUrl on save { field documentationhref, gettingstartedhref; }
+
+  validation validatePopularity on save { field popularity; }
+
+  determination CalculateLanguageKey on modify
+  {
+    create;
+  }
+
 }

@@ -2,6 +2,9 @@ projection;
 
 define behavior for ZC_PROGRAMMINGLANGUAGES_HSKA03 //alias <alias_name>
 {
+
+  use action updatePopulatrity;
+
   use create;
   use update;
   use delete;
