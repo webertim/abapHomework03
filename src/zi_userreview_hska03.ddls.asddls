@@ -5,15 +5,15 @@
 @EndUserText.label: 'CDS for user reviews'
 define root view ZI_USERREVIEW_HSKA03
   as select from zuserrating_03
-  association [1] to zplanguages_03 as _ProgrammingLanguages on $projection.langid = _ProgrammingLanguages.id
 {
+
+      //zuserrating_03
   key langid,
       username,
       performancerating,
       nativrelibariesratings,
       communityrating,
       frameworkrating,
-      workflowrating,
+      workflowrating
 
-      _ProgrammingLanguages
 }

@@ -3,10 +3,13 @@
 {
 "FROM":
 [
+"ZI_PLANGUAGES_03",
 "ZUSERRATING_03"
 ],
 "ASSOCIATED":
-[],
+[
+"ZI_PLANGUAGES_03"
+],
 "BASE":
 [],
 "ANNO_REF":

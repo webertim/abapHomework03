@@ -9,7 +9,4 @@ lock master
   create;
   update;
   delete;
-
-
-
 }
