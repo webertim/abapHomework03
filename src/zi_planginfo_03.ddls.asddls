@@ -6,6 +6,7 @@
 define view ZI_PLANGINFO_03 as select from zplanginfo_03 {
     //zplanginfo_03
     key langid,
+    name,
     documentationhref,
     gettingstartedhref,
     age,

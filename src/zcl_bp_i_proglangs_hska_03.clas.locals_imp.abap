@@ -29,6 +29,10 @@ CLASS lhc_ProgrammingLanguages IMPLEMENTATION.
 
     LOOP AT keys INTO DATA(ls_key).
       lv_max_langid = lv_max_langid + 1.
+
+      "READ ENTITIES of  ZI_ProgrammingLanguages_HSKA03 IN LOCAL MODE
+      "ENTITY ProgrammingLanguages FIELDS ( age  ) WITH KEY ls_key
+
       MODIFY ENTITIES OF ZI_ProgrammingLanguages_HSKA03  IN LOCAL MODE
         ENTITY ProgrammingLanguages
           UPDATE SET FIELDS WITH VALUE #( ( langid = lv_max_langid ) )

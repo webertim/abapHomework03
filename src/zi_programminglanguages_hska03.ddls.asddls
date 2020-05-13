@@ -5,7 +5,6 @@
 @EndUserText.label: 'Information about programming languages'
 define root view ZI_ProgrammingLanguages_HSKA03
   as select from zplanginfo_03 as ProgrammingLanguageInfo
-  association [1..1] to ZI_PLANGUAGES_03 as _ProgrammingLanguages on ProgrammingLanguageInfo.langid = _ProgrammingLanguages.langid
   association [1..1] to ZI_USERAVG_03    as _UserAvarage          on ProgrammingLanguageInfo.langid = _UserAvarage.langid
 {
   key ProgrammingLanguageInfo.langid,
@@ -15,7 +14,7 @@ define root view ZI_ProgrammingLanguages_HSKA03
       operationarea,
       popularity,
 
-      _ProgrammingLanguages.name,
+      name,
       _UserAvarage.communityavg,
       _UserAvarage.frameworkavg,
       _UserAvarage.nativelibrariesavg,

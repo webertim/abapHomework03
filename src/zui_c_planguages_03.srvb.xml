@@ -30,6 +30,7 @@
       </item>
      </SERVICES>
     </CONTENT>
+    <PUBLISHED>true</PUBLISHED>
    </SRVB>
   </asx:values>
  </asx:abap>

@@ -55,7 +55,7 @@ define root view entity ZC_PROGRAMMINGLANGUAGES_HSKA03
                      lineItem:       [ { position: 20, importance: #HIGH } ],
                      identification: [ { position: 20 , label: 'Name'} ],
                      selectionField: [ { position: 20 } ] }
-      @Consumption.valueHelpDefinition: [{ entity : {name: 'ZI_PLANGUAGES_03', element: 'name'  } }]
+      //@Consumption.valueHelpDefinition: [{ entity : {name: 'ZI_PLANGINFO_03', element: 'name'  } }]
      
       @Search.defaultSearchElement: true
       name      as Name,
