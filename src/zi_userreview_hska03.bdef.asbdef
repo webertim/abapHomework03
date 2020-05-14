@@ -1,14 +1,22 @@
-managed implementation in class ZCL_BP_I_USERREVIEWS_HSKA_03; // implementation in class zbp_i_userreview_hska03 unique;
+managed implementation in class ZCL_BP_I_USERREVIEWS_HSKA_03 unique; // implementation in class zbp_i_userreview_hska03 unique;
 
-define behavior for ZI_USERREVIEW_HSKA03 //alias <alias_name>
-persistent table zuserrating_03
+define behavior for ZI_USERREVIEW_HSKA03 alias UserReview //alias <alias_name>
+persistent table zuserratings_03
 lock master
 //authorization master ( instance )
 //etag master <field_name>
 {
 
-
   create;
   update;
   delete;
+
+  validation validateRating on save { field communityrating, frameworkrating, nativrelibariesratings, performancerating, workflowrating; }
+
+  determination CalculateRatingAvarage on modify
+  {
+    create;
+  }
+
+
 }

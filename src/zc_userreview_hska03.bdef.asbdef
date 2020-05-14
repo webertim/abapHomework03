@@ -1,0 +1,6 @@
+projection;
+
+define behavior for ZC_USERREVIEW_HSKA03 //alias <alias_name>
+{
+  use create;
+}

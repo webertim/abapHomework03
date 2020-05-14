@@ -4,10 +4,10 @@
 @AccessControl.authorizationCheck: #CHECK
 @EndUserText.label: 'Information about programming languages'
 define root view ZI_ProgrammingLanguages_HSKA03
-  as select from zplanginfo_03 as ProgrammingLanguageInfo
-  association [1..1] to ZI_USERAVG_03    as _UserAvarage          on ProgrammingLanguageInfo.langid = _UserAvarage.langid
+  as select from zplanginfos_03 as ProgrammingLanguageInfo
+  association [0..1] to ZI_USERAVG_03    as _UserAvarage          on $projection.langid = _UserAvarage.langid
 {
-  key ProgrammingLanguageInfo.langid,
+  key langid,
       documentationhref,
       gettingstartedhref,
       age,

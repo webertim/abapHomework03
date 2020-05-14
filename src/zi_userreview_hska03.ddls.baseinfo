@@ -3,10 +3,12 @@
 {
 "FROM":
 [
-"ZUSERRATING_03"
+"ZUSERRATINGS_03"
 ],
 "ASSOCIATED":
-[],
+[
+"ZI_PLANGINFO_03"
+],
 "BASE":
 [],
 "ANNO_REF":

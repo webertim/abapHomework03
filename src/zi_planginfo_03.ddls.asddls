@@ -3,7 +3,7 @@
 @AbapCatalog.preserveKey: true
 @AccessControl.authorizationCheck: #CHECK
 @EndUserText.label: 'PLangInfo View'
-define view ZI_PLANGINFO_03 as select from zplanginfo_03 {
+define view ZI_PLANGINFO_03 as select from zplanginfos_03 {
     //zplanginfo_03
     key langid,
     name,

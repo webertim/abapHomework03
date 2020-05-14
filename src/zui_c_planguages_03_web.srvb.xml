@@ -4,40 +4,36 @@
   <asx:values>
    <SRVB>
     <METADATA>
-     <NAME>ZUI_C_PLANGUAGES_03</NAME>
-     <DESCRIPTION>Service binding for programming languages</DESCRIPTION>
+     <NAME>ZUI_C_PLANGUAGES_03_WEB</NAME>
+     <DESCRIPTION>Web API</DESCRIPTION>
      <LANGUAGE>EN</LANGUAGE>
     </METADATA>
     <CONTENT>
      <BIND_TYPE_IMPL>
-      <NAME>ZUI_C_PLANGUAGES_03</NAME>
+      <NAME>ZUI_C_PLANGUAGES_03_WEB</NAME>
      </BIND_TYPE_IMPL>
      <BIND_TYPE>ODATA</BIND_TYPE>
+     <BIND_TYPE_CATEGORY>1</BIND_TYPE_CATEGORY>
      <BIND_TYPE_VERSION>V2</BIND_TYPE_VERSION>
      <SERVICES>
       <item>
-       <SERVICE_NAME>ZUI_C_PLANGUAGES_03</SERVICE_NAME>
+       <SERVICE_NAME>ZUI_C_PLANGUAGES_03_WEB</SERVICE_NAME>
        <SERVICE_CONTENT>
         <item>
          <SERVICE_VERSION>0001</SERVICE_VERSION>
+         <RELEASE_STATE>NOT_RELEASED</RELEASE_STATE>
          <SRVD_REF>
           <URI>/sap/bc/adt/ddic/srvd/sources/zui_c_programminglanguages_03</URI>
           <TYPE>SRVD/SRV</TYPE>
           <NAME>ZUI_C_PROGRAMMINGLANGUAGES_03</NAME>
          </SRVD_REF>
         </item>
-        <item>
-         <SERVICE_VERSION>0002</SERVICE_VERSION>
-         <SRVD_REF>
-          <URI>/sap/bc/adt/ddic/srvd/sources/zui_c_userreview_03</URI>
-          <TYPE>SRVD/SRV</TYPE>
-          <NAME>ZUI_C_USERREVIEW_03</NAME>
-         </SRVD_REF>
-        </item>
        </SERVICE_CONTENT>
       </item>
      </SERVICES>
     </CONTENT>
+    <CONTRACT>C2</CONTRACT>
+    <RELEASE_SUPPORTED>true</RELEASE_SUPPORTED>
     <PUBLISHED>true</PUBLISHED>
    </SRVB>
   </asx:values>
