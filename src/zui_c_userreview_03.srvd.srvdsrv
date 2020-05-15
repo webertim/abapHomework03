@@ -1,5 +1,4 @@
 @EndUserText.label: 'Service definition for User reviews'
 define service ZUI_C_USERREVIEW_03 {
-  expose ZI_USERRATING_03;
   expose ZC_USERREVIEW_HSKA03;
 }

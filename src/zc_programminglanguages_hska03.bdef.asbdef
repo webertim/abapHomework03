@@ -7,5 +7,11 @@ define behavior for ZC_PROGRAMMINGLANGUAGES_HSKA03 //alias <alias_name>
 
   use create;
   use update;
-  use delete;
+
+  use association _UserRating { create; }
+}
+
+define behavior for ZC_USERREVIEW_HSKA03 //alias <alias_name>
+{
+
 }
